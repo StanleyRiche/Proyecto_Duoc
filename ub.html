@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="preload" href="css/css.css" as="style">
@@ -31,22 +38,20 @@
                 <div class="derecha">
                     <nav class="navegacion">
                         <a  href="contacto.html">Contacto</a> 
-                        <a  href="Productos/producto.html">Producto</a> 
-                    </nav>                                                
-                </div>
-                <div class="no-margin-left">
-                    <a  href="session/indexsession.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <circle cx="12" cy="12" r="9" />
-                        <circle cx="12" cy="10" r="3" />
-                        <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
-                        </svg>
-                    </a>
+                        <a  href="producto.html">Producto</a> 
+                        <a  href="session/indexsession.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="12" cy="12" r="9" />
+                            <circle cx="12" cy="10" r="3" />
+                            <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
+                          </svg></a>
+                        
+                    </nav>                
                 </div>
 
             </div>
         </div>
-       
+
         <section id="container-slider">	
             <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
             <a href="javascript: fntExecuteSlide('next');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
@@ -56,7 +61,7 @@
                 <li><a itlist="itList_2" href="#"></a></li>
             </ul>
             <ul id="slider">
-                <li style="background-image: url('img/8.jpg'); z-index:0; opacity: 1;">
+                <li style="background-image: url('https://cdn.pixabay.com/photo/2020/04/15/11/20/telework-5046230_1280.jpg'); z-index:0; opacity: 1;">
                 <div class="content_slider" >
                     <div>
                     <h2>Emprendimiento empresarial</h2>
@@ -65,7 +70,7 @@
                 </div>
                 </div>
                 </li>
-                <li style="background-image: url('img/3.jpg'); ">
+                <li style="background-image: url('https://cdn.pixabay.com/photo/2018/02/20/10/28/business-3167295_960_720.jpg'); ">
                 <div class="content_slider" >
                     <div>
                     <h2>Negocios</h2>
@@ -74,7 +79,7 @@
                 </div>
                 </div>
                 </li>
-                <li style="background-image: url('img/5.jpg'); ">
+                <li style="background-image: url('https://cdn.pixabay.com/photo/2015/07/17/22/42/typing-849806_960_720.jpg'); ">
                 <div class="content_slider" >
                     <div>
                     <h2>Estrategias de negocio</h2>
@@ -88,51 +93,7 @@
 
     </header>
 
-    <main>
-        <legend>Nuestros Productos</legend>
 
-        <div class="grid">
-            <div class="producto">
-                <a href="anuncio.html">
-                    <img class="producto__imagen" src="../img/1.jpg" alt="imagen Camisa">
-                    <div class="producto__imformacion" >
-                        <p class="producto__nombre" >VueJS</p>
-                        <p class="producto__precio" >24$</p>
-                    </div>
-                </a>
-            </div><!-- este es el fin de la clase producto-->
-
-            <div class="producto">
-                <a href="anuncio.html">
-                    <img class="producto__imagen" src="../img/2.jpg" alt="imagen Camisa">
-                    <div class="producto__imformacion" >
-                        <p class="producto__nombre" >AngularJS</p>
-                        <p class="producto__precio" >24$</p>
-                    </div>
-                </a>
-            </div><!-- este es el fin de la clase producto-->
-
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="../img/3.jpg" alt="imagen Camisa">
-                    <div class="producto__imformacion" >
-                        <p class="producto__nombre" >ReactJS</p>
-                        <p class="producto__precio" >24$</p>
-                    </div>
-                </a>
-            </div><!-- este es el fin de la clase producto-->
-
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="../img/4.jpg" alt="imagen Camisa">
-                    <div class="producto__imformacion" >
-                        <p class="producto__nombre" >Redux</p>
-                        <p class="producto__precio" >24$</p>
-                    </div>
-                </a>
-            </div><!-- este es el fin de la clase producto-->
-        </div>
-    </main>
 
 
 
@@ -164,5 +125,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="javascript/app.js"></script>
+</body>
+</html>
+<body>
+    
 </body>
 </html>
