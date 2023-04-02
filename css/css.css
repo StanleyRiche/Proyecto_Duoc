@@ -62,7 +62,7 @@ body
 {
     margin: 0;
 }
-.no-margin-left
+.margin-left
 {
     margin-left: 0;
 }
@@ -148,17 +148,6 @@ body
 
 
 
-
-
-/*HEADER*/
-.webp .header
-{
-    /* background-image: url(../img/banner.webp);  */
-}
-.no-webp .header
-{
-    /* background-image: url(../img/banner.jpg); */
-}
 .header
 {
     /* background-image: url(../img/banner.jpg); */
@@ -201,7 +190,7 @@ body
 .titulo span  /*para saber en que span especifico va a poner las modificaciones */
 {
     font-size: 1.5rem; /* 1rem = 10px*/
-    color: rgb(3, 42, 29);
+    color: rgb(83, 235, 70);
 }
 .titulo h1{
  display: none;
@@ -209,35 +198,46 @@ body
 }
 
 .footer h1{
+    color: var(--Blanco);
     text-align: center;
 }
 .footer
 {
-    background-color: var(---primatioOscuro);
-    padding: 1rem 0;
-    padding: 2rem;
-    margin-top: 3rem;
+    background-color: #ec61c3;
+    padding: 1rem;
+    margin: auto auto ;
 
 }
 .footer__texto
-{
-    /* font-family: var(---fuentePrincipal); */
-    text-align: center;
+{    text-align: center;
     font-size: 2rem;
+    margin: 0 2rem;
 }
-.sobre-nosotros h4{
+.sobre-nosotros h2{
     font-size: 1.3rem;
     font-weight: 400;
 }
+.sobre-nosotros a{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.sobre-nosotros legend{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #e1e1e1;
+}
 .navegacion__footer p{
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
     justify-content: center;
     font-size: 1.3rem;
 }
 .navegacion__enlace--legend{
     text-align: center;
     font-size: 2rem;
+    color: #e1e1e1;
 }
 @media (min-width: 768px ){
      .navegacion__enlace--legend{
@@ -245,8 +245,20 @@ body
         flex-direction: row;
         justify-content: left;
         font-size: 1.8rem;
+        color: #e1e1e1;
     }
 }
+.redes{
+    display: flex;
+    justify-content: center;
+}
+@media (min-width: 768px ){
+     .redes{
+    display: flex;
+    justify-content: flex-end;
+    }
+}
+
 
 .navegacion__enlace--footer
 {
@@ -260,6 +272,16 @@ body
     grid-template-columns: repeat(1 ,1fr);
     width: 100%;
     margin:0 auto;
+}
+
+
+@media (min-width: 768px ){
+   .contenedor--redes{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    width: 100%;
+    margin:0 auto;  
+    }
 }
 
 .bloques
@@ -280,11 +302,10 @@ body
 
 .bloque
 {
-    background: rgb(103,214,217);
-    background: radial-gradient(circle,
-    rgba(103,214,217,0.8203003613554797) 25%,
-    rgba(5,133,212,0.5370760364692753) 98%);
+    background: rgb(125,12,113);
+    background: linear-gradient(180deg, rgba(125,12,113,0.9071350952490371) 21%, rgba(202,65,245,1) 66%, rgba(78,24,77,1) 100%);
     text-align: center;
+    color: var(--Blanco);
 }      
 .bloque__titulo
 {
@@ -296,7 +317,7 @@ body
 }
 .bloques h3,
 .bloques p{
-    color: #000000;
+    color: var(--Blanco);
 }
 
 
@@ -390,14 +411,18 @@ body
     width: auto;
   }
   .reg{
-    color: rgb(85, 85, 221);
+    color: rgb(52, 52, 234);
     display: grid;
     justify-content: center;
+    font-size: 1.7rem;
   }
   .regi{
     display: grid;
     justify-content: center;
-
+  }
+  .text-header{
+    font-size: 3rem;
+    font-weight: 600;
   }
   .contenedor h1{
     display: grid;
@@ -425,6 +450,10 @@ body
 {
     max-width: 75rem;
     margin: 0 auto ; 
+}
+.contac h2
+{
+    text-align: center;
 }
 .produc
 {
@@ -602,6 +631,10 @@ color: var(--jaune);
     grid-template-columns: repeat(2,1fr);
     gap: 2rem;
 }
+.camisa__imagen{
+    width: 100%;
+    height: 100%;
+}
 
 .formulario__campo
 {
@@ -636,8 +669,28 @@ color: var(--jaune);
 
 
 /* BOTONES */
+.boton-volver {
+    background: rgb(174, 202, 12);
+    background: radial-gradient(circle,
+    rgba(185, 217, 103, 0.82) 25%,
+    rgba(53, 212, 5, 0.537) 98%);
+    border: none;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: 700;
+    margin-top: 2.5rem;
+    padding: 1rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 85%;
+    color: var(--Oscuro);
+}
+.boton-volver:hover{
+    background-color: #57e81d;
+    cursor: pointer;
+}
 .boton-verde {
-    background-color: #71b100;
+    background-color: #96d922;
     border: none;
     color: #ffffff;
     display: inline-block;
@@ -659,6 +712,7 @@ color: var(--jaune);
     display: inline-block;
     font-weight: 700;
     margin-top: 2.5rem;
+    margin-bottom: 2rem;
     padding: 1rem 3rem;
     text-align: center;
     text-decoration: none;
@@ -678,13 +732,14 @@ color: var(--jaune);
     position: relative;
     display: block;
     width: 100%;
+    max-height: 40rem;
 }
 #slider {
     position: relative;
     display: block;
     width: 100%;
-    height: 100vh;
-    min-height: 500px;
+    height: 80vh;
+    min-height: 300px;
 }
 #slider li {
     background-repeat: no-repeat;
@@ -694,7 +749,7 @@ color: var(--jaune);
     top: 0 !important;
     left: 0 !important;
     width: 100%;
-    height: 60%;
+    height: 80%;
     display: block;
     -webkit-transition: opacity 1s;
     -moz-transition: opacity 1s;
@@ -721,7 +776,7 @@ color: var(--jaune);
     padding: 15px 30px;
     color: #FFF;
     width: 100%;
-    height: 100%;
+    height: 70%;
 }
 .content_slider div{
     text-align: center;
@@ -828,5 +883,55 @@ color: var(--jaune);
 		padding: 10px 30px;
     	font-size: 10pt;
 	}
+}
 
+/* CARRUSEL DE IMAGEN DE iNDEX */
+.cagacategoro{
+    display: flex;
+    justify-content: space-between;
+    background-color: #bc7acb;
+    align-items: center;
+}
+.boton{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.dev{
+    margin: 1rem;
+    margin-left: 92%;
+}
+
+/* Sorry */
+.sorry h1 {
+    font-size:15rem ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding: auto;
+    color: #bc7acb;
+}
+
+@media (min-width: 768px ){
+    .sorry h1{
+        font-size: 19rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        text-align: center;
+        padding: auto;
+        color: #bc7acb;
+    }     
+}
+.sorry img{
+    display: flex;
+    width: 60rem;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+.sorry p{
+    font-size: 3rem;
+    text-align: center;
+    padding: auto;
 }

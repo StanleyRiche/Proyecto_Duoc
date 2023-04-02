@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="preload" href="css/normalize.css" as="style">
-    <link rel="preload" href="css/css.css" as="style">
-    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preload" href="../css/normalize.css" as="style">
+    <link rel="preload" href="../css/css.css" as="style">
+    <link rel="stylesheet" href="../css/css.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Grupo Cero</title>
+    <title>Nuestro Producto</title>
 </head>
-<body>
+<body >
     <header class="">
+
         <div class="contenedor contenido-header">
             <div class="barra">
-                <a class="logo" href="index.html">
+                <a class="logo" href="../index.html">
                     <h1 class="logo__nombre no-margin">Grupo<span class="logo__bold centrar-texto">Cero</span></h1>
-                    <div class="mobile"></div>
                 </a>
                 <div class="mobile-menu">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="32" height="32" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -25,15 +25,14 @@
                         <line x1="4" y1="6" x2="20" y2="6" />
                         <line x1="4" y1="12" x2="20" y2="12" />
                         <line x1="4" y1="18" x2="20" y2="18" />
-                      </svg>
+                        </svg>
                 </div>
                 <div class="derecha">
                     <nav class="navegacion">
-                        <a  href="contacto.html">Contacto</a> 
-                        <a  href="Productos/producto.html">Producto</a> 
-                    </nav>                                                
+                        <a class="navegacion__enlace" href="../index.html">Inicio</a> 
+                        <a class="navegacion__enlace" href="../contacto.html">Contacto</a>                 
+                    </nav>
                 </div>
-                
                 <div class="margin-left">
                     <a href="../Productos/anuncio.html">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -44,69 +43,26 @@
                             <path d="M6 5l14 1l-1 7h-13" />
                         </svg>
                     </a>
-                    <a  href="session/indexsession.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <a  href="../session/indexsession.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <circle cx="12" cy="12" r="9" />
                         <circle cx="12" cy="10" r="3" />
                         <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
-                        </svg>
-                    </a>
+                      </svg>
+                    </a> 
                 </div>
-
             </div>
         </div>
-       
-        <div id="container-slider">	
-            <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
-            <a href="javascript: fntExecuteSlide('next');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
-            <ul class="listslider">
-                <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
-                <li><a itlist="itList_1" href="#"></a></li>
-                <li><a itlist="itList_2" href="#"></a></li>
-            </ul>
-            <ul id="slider">
-                <li style="background-image: url('img/nuestrosproducto.jpg'); z-index:0; opacity: 1;">
-                    <div class="content_slider" >
-                        <div>
-                            <h2>Nuestros Productos</h2>
-                            <p>Descubra en qué consiste el emprendimiento empresarial por medio de 5 estrategias fundamentales.</p>
-                            <a href="../Productos/producto.html" class="btnSlider">Ver más</a>
-                        </div>
-                    </div>
-                </li>
-                <li style="background-image: url('img/descuento.jpg'); ">
-                    <div class="content_slider" >
-                        <div>
-                            <h2>¿eres cliente?</h2>
-                            <p>Registrate para tener descuentos en todo nuestros producto</p>
-                            <a href="../session/registral.html" class="btnSlider">Ver más</a>
-                        </div>
-                    </div>
-                </li>
-                <li style="background-image: url('img/sobre-nosotros.jpg'); ">
-                    <div class="content_slider" >
-                        <div>
-                            <h2>Conoce más sobre Nosotros</h2>
-                            <p>En Groupo Cero puedes encontrar grandes descuentos en computación y tecnología...</p>
-                            <a href="nosotros.html" class="btnSlider">Ver más</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
     </header>
 
-    <div>
-        <legend class="producto__nombre">Nuestros Productos</legend>
-        <div class="cagacategoro">
-            <h2>Celulares</h2>
-            <a class="boton-amarilla boton" href="Productos/celular.html">Ver Todo</a>
-        </div>
+
+    <main class="produc">
+        <h1>Nuestros Accesorios</h1>
+
         <div class="grid">
             <div class="producto">
                 <a href="anuncio.html">
-                    <img class="producto__imagen" src="../img/1.jpg" alt="imagen Camisa">
+                    <img class="producto__imagen" src="../img/33.jpg" alt="imagen Camisa">
                     <div class="producto__imformacion" >
                         <p class="producto__nombre" >VueJS</p>
                         <p class="producto__precio" >24$</p>
@@ -116,7 +72,7 @@
 
             <div class="producto">
                 <a href="anuncio.html">
-                    <img class="producto__imagen" src="../img/2.jpg" alt="imagen Camisa">
+                    <img class="producto__imagen" src="../img/34.jpg" alt="imagen Camisa">
                     <div class="producto__imformacion" >
                         <p class="producto__nombre" >AngularJS</p>
                         <p class="producto__precio" >24$</p>
@@ -126,7 +82,7 @@
 
             <div class="producto">
                 <a href="producto.html">
-                    <img class="producto__imagen" src="../img/3.jpg" alt="imagen Camisa">
+                    <img class="producto__imagen" src="../img/35.jpg" alt="imagen Camisa">
                     <div class="producto__imformacion" >
                         <p class="producto__nombre" >ReactJS</p>
                         <p class="producto__precio" >24$</p>
@@ -136,38 +92,29 @@
 
             <div class="producto">
                 <a href="producto.html">
-                    <img class="producto__imagen" src="../img/4.jpg" alt="imagen Camisa">
+                    <img class="producto__imagen" src="../img/36.jpg" alt="imagen Camisa">
                     <div class="producto__imformacion" >
                         <p class="producto__nombre" >Redux</p>
                         <p class="producto__precio" >24$</p>
                     </div>
                 </a>
             </div><!-- este es el fin de la clase producto-->
-        </div>
-    </div>
 
-
-    <div>
-        <div class="cagacategoro">
-            <h2>Computadores</h2>
-            <a class="boton-amarilla boton" href="Productos/compulador.html">Ver Todo</a>
-        </div>
-        <div class="grid">
             <div class="producto">
-                <a href="anuncio.html">
-                    <img class="producto__imagen" src="../img/1.jpg" alt="imagen Camisa">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="../img/37.jpg" alt="imagen Camisa">
                     <div class="producto__imformacion" >
-                        <p class="producto__nombre" >VueJS</p>
+                        <p class="producto__nombre" >nodeJS</p>
                         <p class="producto__precio" >24$</p>
                     </div>
                 </a>
             </div><!-- este es el fin de la clase producto-->
-
+  
             <div class="producto">
-                <a href="anuncio.html">
-                    <img class="producto__imagen" src="../img/2.jpg" alt="imagen Camisa">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="../img/38.jpg" alt="imagen Camisa">
                     <div class="producto__imformacion" >
-                        <p class="producto__nombre" >AngularJS</p>
+                        <p class="producto__nombre" >SassJS</p>
                         <p class="producto__precio" >24$</p>
                     </div>
                 </a>
@@ -175,9 +122,19 @@
 
             <div class="producto">
                 <a href="producto.html">
-                    <img class="producto__imagen" src="../img/3.jpg" alt="imagen Camisa">
+                    <img class="producto__imagen" src="../img/39.jpg" alt="imagen Camisa">
                     <div class="producto__imformacion" >
-                        <p class="producto__nombre" >ReactJS</p>
+                        <p class="producto__nombre" >HTML5</p>
+                        <p class="producto__precio" >24$</p>
+                    </div>
+                </a>
+            </div><!-- este es el fin de la clase producto-->
+  
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="../img/40.jpg" alt="imagen Camisa">
+                    <div class="producto__imformacion" >
+                        <p class="producto__nombre" >Github</p>
                         <p class="producto__precio" >24$</p>
                     </div>
                 </a>
@@ -185,66 +142,87 @@
 
             <div class="producto">
                 <a href="producto.html">
-                    <img class="producto__imagen" src="../img/4.jpg" alt="imagen Camisa">
+                    <img class="producto__imagen" src="../img/41.jpg" alt="imagen Camisa">
                     <div class="producto__imformacion" >
-                        <p class="producto__nombre" >Redux</p>
+                        <p class="producto__nombre" >Bulma</p>
+                        <p class="producto__precio" >24$</p>
+                    </div>
+                </a>
+            </div><!-- este es el fin de la clase producto-->
+
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="../img/42.jpg" alt="imagen Camisa">
+                    <div class="producto__imformacion" >
+                        <p class="producto__nombre" >TS</p>
+                        <p class="producto__precio" >24$</p>
+                    </div>
+                </a>
+            </div><!-- este es el fin de la clase producto-->
+
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="../img/43.jpg" alt="imagen Camisa">
+                    <div class="producto__imformacion" >
+                        <p class="producto__nombre" >drupal</p>
+                        <p class="producto__precio" >24$</p>
+                    </div>
+                </a>
+            </div><!-- este es el fin de la clase producto-->
+
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="../img/44.jpg" alt="imagen Camisa">
+                    <div class="producto__imformacion" >
+                        <p class="producto__nombre" >JS</p>
+                        <p class="producto__precio" >24$</p>
+                    </div>
+                </a>
+            </div><!-- este es el fin de la clase producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="../img/45.jpg" alt="imagen Camisa">
+                    <div class="producto__imformacion" >
+                        <p class="producto__nombre" >JS</p>
+                        <p class="producto__precio" >24$</p>
+                    </div>
+                </a>
+            </div><!-- este es el fin de la clase producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="../img/46.jpg" alt="imagen Camisa">
+                    <div class="producto__imformacion" >
+                        <p class="producto__nombre" >JS</p>
+                        <p class="producto__precio" >24$</p>
+                    </div>
+                </a>
+            </div><!-- este es el fin de la clase producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="../img/47.jpg" alt="imagen Camisa">
+                    <div class="producto__imformacion" >
+                        <p class="producto__nombre" >JS</p>
+                        <p class="producto__precio" >24$</p>
+                    </div>
+                </a>
+            </div><!-- este es el fin de la clase producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="../img/48.jpg" alt="imagen Camisa">
+                    <div class="producto__imformacion" >
+                        <p class="producto__nombre" >JS</p>
                         <p class="producto__precio" >24$</p>
                     </div>
                 </a>
             </div><!-- este es el fin de la clase producto-->
         </div>
-    </div>
+        <a href="../index.html" class="boton-volver dev">Volver</a>
+    </main>
+   
+            <!-- <div class="grafico  grafico--camisa"></div> 
+            <div class="grafico  grafico--node"></div>  -->
 
-
-    <div>
-     <div class="cagacategoro">
-                <h2>Accesorios</h2>
-                <a class="boton-amarilla boton" href="Productos/accesorio.html">Ver Todo</a>
-            </div>
-        <div class="grid">
-            <div class="producto">
-                <a href="anuncio.html">
-                    <img class="producto__imagen" src="../img/1.jpg" alt="imagen Camisa">
-                    <div class="producto__imformacion" >
-                        <p class="producto__nombre" >VueJS</p>
-                        <p class="producto__precio" >24$</p>
-                    </div>
-                </a>
-            </div><!-- este es el fin de la clase producto-->
-
-            <div class="producto">
-                <a href="anuncio.html">
-                    <img class="producto__imagen" src="../img/2.jpg" alt="imagen Camisa">
-                    <div class="producto__imformacion" >
-                        <p class="producto__nombre" >AngularJS</p>
-                        <p class="producto__precio" >24$</p>
-                    </div>
-                </a>
-            </div><!-- este es el fin de la clase producto-->
-
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="../img/3.jpg" alt="imagen Camisa">
-                    <div class="producto__imformacion" >
-                        <p class="producto__nombre" >ReactJS</p>
-                        <p class="producto__precio" >24$</p>
-                    </div>
-                </a>
-            </div><!-- este es el fin de la clase producto-->
-
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="../img/4.jpg" alt="imagen Camisa">
-                    <div class="producto__imformacion" >
-                        <p class="producto__nombre" >Redux</p>
-                        <p class="producto__precio" >24$</p>
-                    </div>
-                </a>
-            </div><!-- este es el fin de la clase producto-->
-        </div>
-    </div>
-
-
+        
 
 
 
@@ -257,13 +235,13 @@
                 <div class="contenedor--redes">
                     <legend class="navegacion__enlace--legend">Contactenos Aqui</legend>
                     <div class="redes">
-                        <a href="sorry.html">
+                        <a href="../sorry.html">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler       icon-tabler-brand-facebook" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#2f0ae9" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                 <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
                             </svg>
                         </a>
-                        <a href="sorry.html">
+                        <a href="../sorry.html">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                 <rect x="4" y="4" width="16" height="16" rx="4" />
@@ -272,14 +250,14 @@
                             </svg>                        
                         </a>
 
-                        <a href="sorry.html">
+                        <a href="../sorry.html">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                 <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
                             </svg>                        
                         </a>
 
-                        <a href="sorry.html">
+                        <a href="../sorry.html">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                 <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
@@ -290,15 +268,14 @@
                 </div>
                 <div class="sobre-nosotros ">
                     <legend >Sobre Nosotros</legend>
-                    <p >En Groupo Cero puedes encontrar grandes descuentos en computación y tecnología. Sorpréndete con la gran variedad en equipos, diversos modelos y marcas, según tus necesidades Tener la oportunidad de adaptar un espacio en nuestro hogar, para poder teletrabajar......<a href="nosotros.html">Leer más</a>.</p> 
-                </div>
-                
+                    <p >En Groupo Cero puedes encontrar grandes descuentos en computación y tecnología. Sorpréndete con la gran variedad en equipos, diversos modelos y marcas, según tus necesidades Tener la oportunidad de adaptar un espacio en nuestro hogar, para poder teletrabajar......<a href="../nosotros.html">Leer más</a>.</p> 
+                </div>  
             </nav>
            <p class="footer__texto">Frontend Store Todo los Derecho reservado Tarea Duocuc. &COPY;</p> 
-        </div>
-    </footer>          
-        
+        </div>    
+    </footer>           
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="javascript/app.js"></script>
+    <script src="../javascript/app.js"></script>
 </body>
 </html>
