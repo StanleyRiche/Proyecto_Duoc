@@ -632,10 +632,13 @@ color: var(--jaune);
     gap: 2rem;
 }
 .camisa__imagen{
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
 }
 
+.camisa__contenido ul{
+    font-size: 1.5rem;
+}
 .formulario__campo
 {
     border-color: var(---primatioOscuro);
@@ -897,9 +900,36 @@ color: var(--jaune);
     margin-bottom: 0;
 }
 .dev{
+    color: #1d2ee8;
+    text-decoration: none;
+}
+
+.dev:hover{
+    cursor: pointer;
+    background-color: #c107a2;
+    color: #ffffff;
+}
+
+.devie{
     margin: 1rem;
     margin-left: 92%;
 }
+
+
+.siguiente{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.7rem;
+    font-family: 'Courier New', Courier, monospace;
+    /* margin-left: 60%; */
+}
+.siguiente p{
+    margin-bottom: 0;
+}
+
 
 /* Sorry */
 .sorry h1 {
