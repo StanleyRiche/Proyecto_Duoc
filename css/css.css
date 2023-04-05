@@ -537,7 +537,7 @@ body
 .grid
 {
     display: grid;
-    grid-template-columns: repeat(2 ,1fr);
+    grid-template-columns: repeat(1 ,1fr);
     column-gap: 2rem;
     row-gap: 2rem;
 }
@@ -625,12 +625,15 @@ color: var(--jaune);
         column-gap: 2rem;
     }   
 }
-.formulario-anuncios
-{
+@media (min-width: 768px ){
+     .formulario-anuncios{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 2rem;
 }
+}
+
+
 .camisa__imagen{
     width: 80%;
     height: 80%;
@@ -639,7 +642,8 @@ color: var(--jaune);
 .camisa__contenido ul{
     font-size: 1.5rem;
 }
-.formulario__campo
+@media (min-width: 768px ){
+     .formulario__campo
 {
     border-color: var(---primatioOscuro);
     border-width: 1rem;
@@ -652,6 +656,20 @@ color: var(--jaune);
     appearance: none ;/*para quitar las flechitas de select*/
     
 }
+}
+.formulario__campo{
+    border-color: var(---primatioOscuro);
+    border-width: 1rem;
+    border-style:solid ;
+    background-color: transparent;
+    color:var(---blando) ;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    appearance: none ;/*para quitar las flechitas de select*/
+    margin-top: 1rem;
+}
+
 
 .formulario__submit
 {
@@ -672,7 +690,8 @@ color: var(--jaune);
 
 
 /* BOTONES */
-.boton-volver {
+@media (min-width: 768px ){
+     .boton-volver {
     background: rgb(174, 202, 12);
     background: radial-gradient(circle,
     rgba(185, 217, 103, 0.82) 25%,
@@ -688,6 +707,24 @@ color: var(--jaune);
     margin-left: 85%;
     color: var(--Oscuro);
 }
+}
+.boton-volver {
+    background: rgb(174, 202, 12);
+    background: radial-gradient(circle,
+    rgba(185, 217, 103, 0.82) 25%,
+    rgba(53, 212, 5, 0.537) 98%);
+    border: none;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: 700;
+    margin-top: 2.5rem;
+    padding: 1rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--Oscuro);
+}
+
+
 .boton-volver:hover{
     background-color: #57e81d;
     cursor: pointer;
@@ -909,11 +946,17 @@ color: var(--jaune);
     background-color: #c107a2;
     color: #ffffff;
 }
-
-.devie{
+@media (min-width: 768px ){
+     .devie{
     margin: 1rem;
     margin-left: 92%;
 }
+}
+
+.devie{
+    margin: 1rem;
+}
+
 
 
 .siguiente{
