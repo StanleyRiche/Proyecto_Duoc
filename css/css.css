@@ -1,7 +1,7 @@
 :root
 {
     --Blanco: #ffffff;
-    --Oscuro: #000;
+    --Oscuro: #000000;
     ---Wood:burlywood;
     --Azul: #07eeffe6;
     --jaune: #FFC017;
@@ -546,7 +546,7 @@ body
 }
 
 /**Producto**/
-.producto
+.card
 {
     background-image: linear-gradient(to top , var(--GrisClaro)0% , VAR(--Blanco) 100%);
     padding: 1rem;
@@ -554,7 +554,7 @@ body
 }
 
 
-.producto a{
+.card a{
     text-decoration: none;
 }
 .producto__nombre
