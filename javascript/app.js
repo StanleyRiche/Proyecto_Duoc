@@ -76,3 +76,31 @@ if(document.querySelector('#container-slider')){
      elements[nextElement].style.opacity=1;
      elements[nextElement].style.zIndex =1;
  }
+
+
+
+ function validarFormulario() {
+    var nombre = document.getElementById("nombre").value;
+    var telefono = document.getElementById("telefono").value;
+    var email = document.getElementById("email").value;
+    var mensaje = document.getElementById("mensaje").value;
+    if (nombre == "") {
+        alert("Por favor, ingrese su nombre.");
+        return false;
+    }
+    if (telefono == "") {
+        alert("Por favor, ingrese su número de teléfono.");
+        return false;
+    }
+    if (email == "") {
+        alert("Por favor, ingrese su dirección de correo.");
+        return false;
+    }
+    if (mensaje == "") {
+        alert("Por favor, ingrese su mensaje.");
+        return false;
+    }
+    return true;
+}
+
+  

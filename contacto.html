@@ -57,29 +57,29 @@
         <h2>Contacto</h2>
 
 
-        <form class="formulario">
+        <form class="formulario" onsubmit="return validarFormulario();">
             <fieldset>
-                <legend>Llena el Formulario y te llamamos :) </legend>
+                <legend>Completa el Formulario y nos contactaremos contigo </legend>
 
                 <div class="contenedor-campos">
                     <div class="campo">
                         <label>Nombre:</label>
-                        <input class="input-text" type="text" placeholder="Tu Nombre">
+                        <input class="input-text" type="text" id="nombre" placeholder="Tu Nombre">
                     </div>
 
                     <div class="campo">
                         <label>Telefono:</label>
-                        <input class="input-text" type="tel" placeholder="N° Telefono">
+                        <input class="input-text" type="tel" id="telefono" placeholder="N° Telefono">
                     </div>  
 
                     <div class="campo">
                         <label>Correo:</label>
-                        <input class="input-text" catype="email" placeholder="Tu Correo">
+                        <input class="input-text" catype="email" id="email" placeholder="Tu Correo">
                     </div>
 
                     <div class="campo">
                         <label>Mensaje:</label>
-                        <textarea class="input-text"></textarea>
+                        <textarea class="input-text" id="mensaje"> </textarea>
                     </div>
                 </div><!--Este es el contenedor de los campos-->
 
