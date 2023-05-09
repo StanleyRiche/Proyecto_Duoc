@@ -127,9 +127,9 @@ if(document.querySelector('#container-slider')){
     }
 
     if(telefonoValue === '') {
-        setError(telefono, 'Ingrese su numero');
+        setError(telefono, 'Ingrese su número');
     } else if (telefonoValue.length < 9 ) {
-        setError(telefono, 'Su número debe contener al menos 9 digitos')
+        setError(telefono, 'Su número debe contener al menos 9 dígitos')
     } else {
         setSuccess(telefono);
     }
@@ -137,7 +137,7 @@ if(document.querySelector('#container-slider')){
     if(emailValue === '') {
         setError(email, 'Ingrese un email');
     } else if (!isValidEmail(emailValue)) {
-        setError(email, 'Ingrese un email valido');
+        setError(email, 'Ingrese un email válido');
     } else {
         setSuccess(email);
     }
@@ -145,7 +145,7 @@ if(document.querySelector('#container-slider')){
     if (mensajeValue === ''){
         setError(mensaje, 'Ingrese su mensaje');
     } else if(mensajeValue.length < 25){
-        setError(mensaje, 'su mensaje debe contener al menos 25 caracteres')
+        setError(mensaje, 'Su mensaje debe contener al menos 25 caracteres')
     } else{    
         setSuccess(mensaje);
     }
