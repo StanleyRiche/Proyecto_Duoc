@@ -57,29 +57,33 @@
         <h2>Contacto</h2>
 
 
-        <form class="formulario" onsubmit="return validarFormulario();">
+        <form class="formulario" id="form" action="/">
             <fieldset>
                 <legend>Completa el Formulario y nos contactaremos contigo </legend>
 
                 <div class="contenedor-campos">
                     <div class="campo">
-                        <label>Nombre:</label>
-                        <input class="input-text" type="text" id="nombre" placeholder="Tu Nombre">
+                        <label for="nombre">Nombre</label>
+                        <input class="input-text" type="text" id= 'nombre' placeholder="Ingrese Nombre">
+                        <div class="error"></div>
                     </div>
 
                     <div class="campo">
-                        <label>Telefono:</label>
-                        <input class="input-text" type="tel" id="telefono" placeholder="N° Telefono">
+                        <label for="telefono">Telefono</label>
+                        <input class="input-text" type="text" id= 'telefono' placeholder="Ingrese N° Telefono">
+                        <div class="error"></div>
                     </div>  
 
                     <div class="campo">
-                        <label>Correo:</label>
-                        <input class="input-text" catype="email" id="email" placeholder="Tu Correo">
+                        <label for="email">Email</label>
+                        <input class="input-text" type="text" id= 'email' placeholder="Ingrese Correo">
+                        <div class="error"></div>
                     </div>
 
                     <div class="campo">
-                        <label>Mensaje:</label>
-                        <textarea class="input-text" id="mensaje"> </textarea>
+                        <label for="mensaje">Texto</label>
+                        <textarea class="input-text" id= 'mensaje'> </textarea>
+                        <div class="error"></div>
                     </div>
                 </div><!--Este es el contenedor de los campos-->
 
