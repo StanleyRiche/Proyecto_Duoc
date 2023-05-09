@@ -79,6 +79,9 @@ if(document.querySelector('#container-slider')){
 
 
 
+
+ 
+
  function validarFormulario() {
     var nombre = document.getElementById("nombre").value;
     var telefono = document.getElementById("telefono").value;
