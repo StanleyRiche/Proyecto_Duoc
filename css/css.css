@@ -967,3 +967,10 @@ color: var(--jaune);
     text-align: center;
     padding: auto;
 }
+.error {
+    color: red;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+}
